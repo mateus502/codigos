@@ -1,0 +1,87 @@
+Skip to Play Sketch
+Cookies
+The p5.js Editor uses cookies. Some are essential to the website functionality and allow you to manage an account and preferences. Others are not essential—they are used for analytics and allow us to learn more about our community. We never sell this data or use it for advertising. You can decide which cookies you would like to allow, and learn more in our Privacy Policy.
+
+
+Allow All
+
+Allow Essential
+File
+Edit
+Sketch
+Help
+English
+Log in
+or
+Sign up
+
+
+
+Auto-refresh
+
+Mellow tibia
+
+
+sketch.js
+1
+function setup() {
+2
+  createCanvas(400, 400);
+3
+}
+4
+let olhoX;
+5
+let olhoY;
+6
+​
+7
+function draw() {
+8
+  background("#FF5722");
+9
+  fill("#03A9F4");
+10
+  circle(200, 200, 290); // rosto
+11
+  fill("white");
+12
+  circle(150, 150, 60); // olho esquerdo
+13
+  circle(250, 150, 60); // olho direito
+14
+  line(150, 270,250 , 235); // boca
+15
+  fill("#3F51B5");
+16
+  triangle(200, 180, 170, 220, 220, 220); // nariz
+17
+  line(123, 115, 178, 113); // sobrancelha esquerda
+18
+  line(225, 116, 279, 106); // sobrancelha direita
+19
+  // circle(150,150,10); // pupila esquerda
+20
+  //circle(250,150,10); // pupila direita
+21
+​
+22
+  olhoX = map(mouseX, 0, 400, 130, 170);
+23
+  olhoY = map(mouseY, 0, 400, 130, 170);
+24
+​
+25
+  circle(olhoX, olhoY, 10); // nova pupila esquerda
+26
+  circle(olhoX + 100, olhoY, 10); //nova pupila direita
+27
+  if (mouseIsPressed) {
+There are no lint messages
+Current lineline 10
+
+Console
+Clear
+
+​
+Preview
